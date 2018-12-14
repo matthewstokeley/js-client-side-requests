@@ -1,7 +1,7 @@
 (function(window) {
 
     /**
-     * an interface for attaching an XHR request to an element
+     * a for attaching an XHR request to an element
      * @todo add additional options
      * @param {[type]} options [description]
      */
@@ -20,23 +20,23 @@
 
     Fetch.prototype.sendRequest = function(element) {
 
-        var method = element.element.dataset.apiMethod;
-        var endpoint = element.element.dataset.apiEndpoint;
-        var data = element.element.dataset.apiData;
+        var method = element.el.dataset.apiMethod;
+        var endpoint = element.el.dataset.apiEndpoint;
+        var data = element.el.dataset.apiData;
 
         var request = new window.XHR({
             url: this.options.rootUrl + endpoint,
             authentication: this.options.authentication || null,
             method: method || 'GET',
             data: data || null,
-            callback: element.callback,
+            callback: element.dn,
             headers: this.options.headers || null
         });
 
     };
 
     Fetch.prototype.addListeners = function(element) {
-        element.element.addEventListener('click', function() {
+        element.el.addEventListener('click', function() {
           this.sendRequest(element);
         }.bind(this));
     };
