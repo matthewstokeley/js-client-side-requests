@@ -17,12 +17,12 @@ var callback = function(data) {
 }
 
 var request = new window.XHR({
-    url: this.options.rootUrl + endpoint,
-    authentication: this.options.authentication || null,
+    url: endpoint,
+    authentication: authentication || null,
     method: method || 'GET',
     data: data || null,
     callback: callback,
-    headers: this.options.headers || null
+    headers: headers || null
 });
 
 // use html to handle the request
