@@ -38,7 +38,7 @@ const clickHandler = (event) => {
 <button id="button-2" data-api-endpoint="/create" data-api-method="POST" data-api-data="something">
 
 var fetch = new Fetch({
-	elements: [ 
+    elements: [ 
       {
         el: document.getElementById('button-1'), 
         fn: callback
@@ -47,9 +47,9 @@ var fetch = new Fetch({
         fn: callback
       }
     ],
-	rootUrl: 'https://api.com/'
-	authentication: '' 
-	headers: ''
+    rootUrl: 'https://api.com/'
+    authentication: '' 
+    headers: ''
 })
 
 ```
