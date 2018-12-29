@@ -8,7 +8,7 @@ Alternatively - this is useful for single requests - the `xhr` class that `Fetch
 
 @todo test 
 
-### Example
+### Examples
 
 ```
 
@@ -30,7 +30,10 @@ const clickHandler = (event) => {
     headers: headers || null
   })
 }
+```
 
+
+```
 // use data-attributes to handle the request
 
 <button id="button-1" data-api-endpoint="/find" data-api-method="GET" data-api-data="something" data-callback="callback(event)">
