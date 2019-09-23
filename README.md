@@ -2,6 +2,8 @@
 
 0.0.1
 
+@deprecated use fetch
+
 A soon-to-be deprecated, idiosyncratic `xhr` request library for the browser - ie friendly and polyfill-free.  Request data is attached to an elements `dataset` using html data-attributes.  Click handlers are registered from inside the `Fetch` instance, which has several drawbacks and advantages.  Most notably, this includes the ability to register numerous potential `xhr` requests programatically, meant for working with templates.
 
 Alternatively - this is useful for single requests - the `xhr` class that `Fetch` uses is namespaced to the `window`.  
