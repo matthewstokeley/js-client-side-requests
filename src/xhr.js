@@ -27,6 +27,8 @@
 
     /**
      * [init description]
+     * 
+     * @todo replace chaining with a sequence
      * @return {[type]} [description]
      */
     XHR.prototype.init = function() {
